@@ -36,7 +36,7 @@ using namespace std;
 
 #define MAX_N 300
 
-
+/** ¸¨Öúdebug£¬Êä³ö×Ö·ûÊı×é **/
 int debug(char* str, int len)
 {
     for (int i = 0; i < len; i++)
