@@ -1,3 +1,6 @@
 # Compilation & Executable
 *.exe
 *.o
+
+# Excel tables
+*.xls
