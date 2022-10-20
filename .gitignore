@@ -3,4 +3,6 @@
 *.o
 
 # Excel tables
-*.xls
+*.xlsx
+*.docx
+*.pdf
