@@ -24,19 +24,26 @@ yes
 
 #include <iostream>
 #include <cstring>
-#include <algorithm>
 using namespace std;
 
 #define MAX_LEN 100
 
-char num[MAX_LEN] = "\0", rev_num[MAX_LEN] = "\0";
+char num[MAX_LEN] = "\0";
+
+/** 递归检查回文 **/
+bool check_palindrome(int l, int r) // l和r分别为左右对称位置的下标
+{
+    if (l >= r)             // 若l超过r，说明已经全都检查完，且之前的部分都满足对称
+        return true;        // 则递归终止，返回true
+    if (num[l] != num[r])   // 一旦l和r的字符不同，则说明不对称（不是回文）
+        return false;       // 则递归终止，直接返回false
+    return check_palindrome(l + 1, r - 1);  // l右移一位，r左移一位，递归
+}
 
 int main()
 {
-    cin >> num;             // 输入字符串num
-    strcpy(rev_num, num);   // 将num拷贝到rev_num中
-    reverse(rev_num, rev_num + strlen(rev_num));    // 翻转rev_num
-    if (!strcmp(rev_num, num))  // 对比num和rev_num
+    cin >> num;
+    if (check_palindrome(0, strlen(num) - 1))
         cout << "yes" << endl;
     else
         cout << "no" << endl;
