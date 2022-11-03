@@ -2,6 +2,10 @@
 *.exe
 *.o
 
+# Test cases
+*.in
+*.out
+
 # Excel tables
 *.xls
 *.xlsx
