@@ -78,18 +78,20 @@ using namespace std;
 char arr[MAX_N][MAX_N] = {"\0"};
 int H = 0, W = 0;
 
+/** 搜索方向 **/
 const int dw[ND] = {0, 0, 1, -1};
 const int dh[ND] = {1, -1, 0, 0};
 
+/** 深度优先遍历 **/
 int dfsCount(int h, int w)
 {
     int ret = 0;
-    if (arr[h][w] == RED)
-        return ret;
-    arr[h][w] = RED;
-    ret++;
-    for (int d = 0; d < ND; d++)
-        ret += dfsCount(h + dh[d], w + dw[d]);
+    if (arr[h][w] == RED)   // 若当前格子为RED
+        return ret;         // 则直接返回0
+    arr[h][w] = RED;        // 将当前位置标记为RED
+    ret++;                  // ret计数加1
+    for (int d = 0; d < ND; d++)                // 探索四个方向
+        ret += dfsCount(h + dh[d], w + dw[d]);  // 每个方向返回的结果加到计数ret上
     return ret;
 }
 
