@@ -1,29 +1,29 @@
 /*****
-ÌâÄ¿ÃèÊö
+é¢˜ç›®æè¿°
 
-»ØÊý²ÂÏë£º ÈÎÈ¡Ò»¸öÊý£¬ÔÙ°ÑËüµ¹¹ýÀ´£¬²¢°ÑÕâÁ½¸öÊýÏà¼Ó£¬È»ºó°ÑÕâ¸öºÍÊýÔÙµ¹¹ýÀ´£¬ÓëÔ­ºÍÊýÏà
-¼Ó£¬ÖØ¸´´Ë¹ý³Ì£¬Ò»¶¨ÄÜ»ñµÃÒ»¸ö»ØÊý¡£Àý£º 68 µ¹¹ýÀ´ÊÇ 86
-        68+86= 154£¬154+451= 605£¬ 605+506=1111 (»ØÊý)
-±à³Ì£¬ÊäÈëÈÎÒâÕûÊý£¬°´ÉÏÊö·½·¨²úÉúÒ»¸ö»ØÊý£¬Îª¼ò±ãÆð¼û£¬×î¶à¼ÆËã7²½£¬¿´ÊÇ·ñÄÜµÃµ½Ò»¸ö»ØÊý¡£
-ÒªÇó£º
-Ö÷º¯ÊýÖÐ½ÓÊÕ¼üÅÌÊý¾Ý£¬ÏÔÊ¾¸ÃÊýÓëÆäµ¹ÊýµÄºÍ£¬Êä³öÃ¿Ò»²½¼ÆËã²½Öè¡£
-×Óº¯Êý1£¬¼ÆËã¸ÃÊýµÄµ¹Êý¡£
-×Óº¯Êý2£¬ÑéÖ¤ºÍÊÇ·ñÎª»ØÊý£¬
+å›žæ•°çŒœæƒ³ï¼š ä»»å–ä¸€ä¸ªæ•°ï¼Œå†æŠŠå®ƒå€’è¿‡æ¥ï¼Œå¹¶æŠŠè¿™ä¸¤ä¸ªæ•°ç›¸åŠ ï¼Œç„¶åŽæŠŠè¿™ä¸ªå’Œæ•°å†å€’è¿‡æ¥ï¼Œä¸ŽåŽŸå’Œæ•°ç›¸
+åŠ ï¼Œé‡å¤æ­¤è¿‡ç¨‹ï¼Œä¸€å®šèƒ½èŽ·å¾—ä¸€ä¸ªå›žæ•°ã€‚ä¾‹ï¼š 68 å€’è¿‡æ¥æ˜¯ 86
+        68+86= 154ï¼Œ154+451= 605ï¼Œ 605+506=1111 (å›žæ•°)
+ç¼–ç¨‹ï¼Œè¾“å…¥ä»»æ„æ•´æ•°ï¼ŒæŒ‰ä¸Šè¿°æ–¹æ³•äº§ç”Ÿä¸€ä¸ªå›žæ•°ï¼Œä¸ºç®€ä¾¿èµ·è§ï¼Œæœ€å¤šè®¡ç®—7æ­¥ï¼Œçœ‹æ˜¯å¦èƒ½å¾—åˆ°ä¸€ä¸ªå›žæ•°ã€‚
+è¦æ±‚ï¼š
+ä¸»å‡½æ•°ä¸­æŽ¥æ”¶é”®ç›˜æ•°æ®ï¼Œæ˜¾ç¤ºè¯¥æ•°ä¸Žå…¶å€’æ•°çš„å’Œï¼Œè¾“å‡ºæ¯ä¸€æ­¥è®¡ç®—æ­¥éª¤ã€‚
+å­å‡½æ•°1ï¼Œè®¡ç®—è¯¥æ•°çš„å€’æ•°ã€‚
+å­å‡½æ•°2ï¼ŒéªŒè¯å’Œæ˜¯å¦ä¸ºå›žæ•°ï¼Œ
 
-¹ØÓÚÊäÈë
+å…³äºŽè¾“å…¥
 
-ÊäÈëÎªintÐÍ
+è¾“å…¥ä¸ºintåž‹
 
-¹ØÓÚÊä³ö
+å…³äºŽè¾“å‡º
 
-»»ÐÐÊä³öÃ¿²½¼ÆËã¹ý³Ì£¨×î¶àÆß²½£©
-Êä³ö7²½ÄÚÊÇ·ñµÃµ½Ò»¸ö»ØÊý£¨Y/N£©
+æ¢è¡Œè¾“å‡ºæ¯æ­¥è®¡ç®—è¿‡ç¨‹ï¼ˆæœ€å¤šä¸ƒæ­¥ï¼‰
+è¾“å‡º7æ­¥å†…æ˜¯å¦å¾—åˆ°ä¸€ä¸ªå›žæ•°ï¼ˆY/Nï¼‰
 
-Àý×ÓÊäÈë
+ä¾‹å­è¾“å…¥
 
 68
 
-Àý×ÓÊä³ö
+ä¾‹å­è¾“å‡º
 
 68+86=154
 154+451=605
@@ -41,7 +41,7 @@ using namespace std;
 
 char s[MAX_LEN] = "", r[MAX_LEN] = "";
 
-/** Éú³ÉnµÄµ¹Ðò×Ö·û´® **/
+/** ç”Ÿæˆnçš„å€’åºå­—ç¬¦ä¸² **/
 void get_reverse(int n)
 {
     sprintf(s, "%d", n);
@@ -49,7 +49,7 @@ void get_reverse(int n)
     reverse(r, r + strlen(r));
 }
 
-/** ÅÐ¶ÏnÊÇ·ñ»ØÎÄ **/
+/** åˆ¤æ–­næ˜¯å¦å›žæ–‡ **/
 bool is_palindromic(int n)
 {
     get_reverse(n);
@@ -64,20 +64,20 @@ int main()
     scanf("%d", &num);
     while (n++ < MAX_STEP)
     {
-        if (is_palindromic(num))    // Èônum»ØÎÄ
+        if (is_palindromic(num))    // è‹¥numå›žæ–‡
         {
-            printf("Y\n");          // ÔòÊä³öY
-            return 0;               // º¯ÊýÖ±½Ó·µ»Ø
+            printf("Y\n");          // åˆ™è¾“å‡ºY
+            return 0;               // å‡½æ•°ç›´æŽ¥è¿”å›ž
         }
-        sscanf(r, "%d", &rev_num);                          // ½«rÖÐµ¹Ðò×Ö·û´®×ªÎªintÀàÐÍ´æ·ÅÔÚrev_numÖÐ
-        printf("%d+%d=%d\n", num, rev_num, num + rev_num);  // ´òÓ¡¼ÆËã²½Öè
-        num += rev_num;                                     // ¸üÐÂnum
+        sscanf(r, "%d", &rev_num);                          // å°†rä¸­å€’åºå­—ç¬¦ä¸²è½¬ä¸ºintç±»åž‹å­˜æ”¾åœ¨rev_numä¸­
+        printf("%d+%d=%d\n", num, rev_num, num + rev_num);  // æ‰“å°è®¡ç®—æ­¥éª¤
+        num += rev_num;                                     // æ›´æ–°num
     }
-    if (is_palindromic(num))    // ÅÐ¶ÏnumÊÇ·ñ»ØÎÄ
+    if (is_palindromic(num))    // åˆ¤æ–­numæ˜¯å¦å›žæ–‡
     {
         printf("Y\n");
         return 0;
     }
-    printf("N\n");  // ÎÞ·¨ÔÚMAX_STEPÄÚÍê³É£¬Êä³öN
+    printf("N\n");  // æ— æ³•åœ¨MAX_STEPå†…å®Œæˆï¼Œè¾“å‡ºN
     return 0;
 }
