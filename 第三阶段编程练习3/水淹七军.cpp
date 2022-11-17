@@ -63,7 +63,7 @@ void dfs(int sr, int sc, int h)
         return;             // 终止
     if (visit[sr][sc])      // 当前位置已经被淹没
         return;             // 终止
-    visit[sr][sc] = true    // 淹没当前位置;
+    visit[sr][sc] = true;   // 淹没当前位置
     for (int d = 0; d < ND; d++)
         dfs(sr + dr[d], sc + dc[d], h);     // 向所有方向搜索
 }
