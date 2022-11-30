@@ -75,8 +75,6 @@ int main()
     cin >> n;
     for (int i = 1; i <= n; i++)
         cin >> o[i].l >> o[i].r >> o[i].v;
-    o[0].r = -1;
-    o[n + 1].r = MAX_INT;
     sort(o + 1, o + n + 1, cmp);    // O(n log n)
     for (int i = 1;i <= n; i++)
     {
