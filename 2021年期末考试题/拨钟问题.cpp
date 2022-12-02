@@ -64,12 +64,15 @@ bool q_empty()
 void q_push(int enc)
 {
     q[q_back++] = enc;
+    q_back %= MAX_STATE;
 }
 
 /** Pop item from the queue **/
 int q_pop()
 {
-    return q[q_front++];
+    int ret = q[q_front++];
+    q_front %= MAX_STATE;
+    return ret;
 }
 
 /** Update a single clock **/
