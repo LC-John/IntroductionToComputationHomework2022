@@ -1,43 +1,43 @@
 /*****
-ÌâÄ¿ÃèÊö
+é¢˜ç›®æè¿°
 
-n½×ÀÕÈÃµÂ¶àÏîÊ½µÄ¹«Ê½ÈçÏÂ
+né˜¶å‹’è®©å¾·å¤šé¡¹å¼çš„å…¬å¼å¦‚ä¸‹
 
-¹ØÓÚÊäÈë
+å…³äºŽè¾“å…¥
 
-ÊäÈëÁ½¸öÕûÊý£¬µÚÒ»¸öÊÇnµÄÖµ£¬µÚ¶þ¸öÊÇxµÄÖµ
+è¾“å…¥ä¸¤ä¸ªæ•´æ•°ï¼Œç¬¬ä¸€ä¸ªæ˜¯nçš„å€¼ï¼Œç¬¬äºŒä¸ªæ˜¯xçš„å€¼
 
-¹ØÓÚÊä³ö
+å…³äºŽè¾“å‡º
 
-Êä³öÒ»¸öÊý£¬ÊÇº¯ÊýÖµ
-£¨Êä³öËÄÉáÎåÈëºóµÄÕûÊýÖµ£©
+è¾“å‡ºä¸€ä¸ªæ•°ï¼Œæ˜¯å‡½æ•°å€¼
+ï¼ˆè¾“å‡ºå››èˆäº”å…¥åŽçš„æ•´æ•°å€¼ï¼‰
 
-Àý×ÓÊäÈë
+ä¾‹å­è¾“å…¥
 
 2 5
 
-Àý×ÓÊä³ö
+ä¾‹å­è¾“å‡º
 
 7
 *****/
 
 #include <iostream>
-#include <cmath>
 using namespace std;
 
-double legendre(int n, int x)
+int x;
+
+double legendre(int n)
 {
     if (!n)
         return 1;
-    if (n == 1)
+    else if (n == 1)
         return x;
-    return ((2 * n - 1) * legendre(n - 1, x) - (n - 1) * legendre(n - 2, x)) / n;
+    return ((2*n-1) * x * legendre(n-1) - (n-1) * legendre(n-2)) / n;
 }
 
 int main()
 {
-    int n = 0, x = 0;
+    int n;
     cin >> n >> x;
-    cout << ceil(legendre(n, x)) << endl;   // Ó­ºÏ²âÊÔÊý¾Ý = =
-    return 0;
+    cout << legendre(n);
 }
